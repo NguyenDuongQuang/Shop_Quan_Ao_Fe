@@ -21,7 +21,6 @@ import { HoaDonComponent } from './admin/containers/views/hoa-dons/hoa-don/hoa-d
 import { DashboardComponent } from './admin/containers/views/dashboard/dashboard.component';
 import { ChartJSComponent } from './admin/containers/views/chartjs/chartjs.component';
 import { UserdetailComponent } from './admin/containers/userdetail/userdetail.component';
-import { WidgetsComponent } from './admin/containers/views/widgets/widgets.component';
 import { ProfileComponent } from './admin/containers/views/profile/profile.component';
 import { ChartSecondComponent } from './admin/containers/views/chart-second/chart-second.component';
 import { DiscoutCodesComponent } from './admin/containers/views/discout-codes/discout-codes.component';
