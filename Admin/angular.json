@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Admin": {
+    "my-adminlte3-demo-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "sass"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Admin",
+            "outputPath": "dist/my-adminlte3-demo-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +28,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass",
+              "node_modules/admin-lte/plugins/fontawesome-free/css/all.css",
+              "node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.css",
+              "node_modules/admin-lte/dist/css/adminlte.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/admin-lte/plugins/jquery/jquery.js",
+              "node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.js",
+              "node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.js",
+              "node_modules/admin-lte/dist/js/adminlte.js",
+              "node_modules/admin-lte/dist/js/demo.js",
+              "node_modules/admin-lte/plugins/jquery-mousewheel/jquery.mousewheel.js",
+              "node_modules/admin-lte/plugins/raphael/raphael.js",
+              "node_modules/admin-lte/plugins/jquery-mapael/jquery.mapael.js",
+              "node_modules/admin-lte/plugins/chart.js/Chart.js",
+              "node_modules/admin-lte/dist/js/pages/dashboard2.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Admin:build"
+            "browserTarget": "my-adminlte3-demo-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Admin:build:production"
+              "browserTarget": "my-adminlte3-demo-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Admin:build"
+            "browserTarget": "my-adminlte3-demo-app:build"
           }
         },
         "test": {
@@ -88,7 +106,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ],
             "scripts": []
           }
@@ -110,19 +128,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Admin:serve"
+            "devServerTarget": "my-adminlte3-demo-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Admin:serve:production"
+              "devServerTarget": "my-adminlte3-demo-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Admin",
+  "defaultProject": "my-adminlte3-demo-app",
   "cli": {
-    "analytics": "aab186c2-d810-44c9-8084-38eb209abb13"
+    "analytics": "e7b91280-e1a9-4eb3-b4f6-160e0e60eb49"
   }
 }
