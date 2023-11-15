@@ -6,8 +6,8 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import { Router } from '@angular/router';
 import { CategoryService } from '../../categories/category.service';
 import { BrandService } from '../../brands/brand.service';
-import { ToastServiceService } from '../../../shared/toast-service.service';
-import { environment } from '../../../../../../environments/environment';
+import { ToastServiceService } from '../../../service/toast-service.service';
+import { environment } from '../../../../environments/environment';
 import { __values } from 'tslib';
 import { NhaCungCapService } from '../../nhacungcaps/nhacungcap.service';
 @Component({

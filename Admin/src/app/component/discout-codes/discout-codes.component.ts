@@ -5,7 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Router } from '@angular/router';
 import { disconnect } from 'process';
-import { ToastServiceService } from '../../shared/toast-service.service';
+import { ToastServiceService } from '../../service/toast-service.service';
 import { CategoryService, Category } from '../categories/category.service';
 import { CategoryComponent } from '../categories/category/category.component';
 import { DiscountCode, DiscountCodeService } from './discount-code.service';

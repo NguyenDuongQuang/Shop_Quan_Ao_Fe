@@ -13,9 +13,9 @@ import { MatTable, MatTableDataSource } from '@angular/material/table';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ImagesmodelComponent } from './imagesmodel/imagesmodel.component';
 import { MatAccordion } from '@angular/material/expansion';
-import { ToastServiceService } from '../../shared/toast-service.service';
+import { ToastServiceService } from '../../service/toast-service.service';
 import { SanPhamBienTheService } from '../san-pham-bien-thes/san-pham-bien-the.service';
-import { environment } from '../../../../../environments/environment';
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',

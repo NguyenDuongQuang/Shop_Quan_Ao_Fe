@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
-import { ToastServiceService } from '../../../shared/toast-service.service';
+import { ToastServiceService } from '../../../service/toast-service.service';
 import { BlogService } from '../blog.service';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 @Component({

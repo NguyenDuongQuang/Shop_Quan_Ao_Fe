@@ -4,7 +4,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { SizesComponent } from '../sizes.component';
 import { SizeService } from '../size.service';
 import { CategoryService } from '../../categories/category.service';
-import { ToastServiceService } from '../../../shared/toast-service.service';
+import { ToastServiceService } from '../../../service/toast-service.service';
 import { environment } from '../../../../../../environments/environment';
 @Component({
   selector: 'app-size',

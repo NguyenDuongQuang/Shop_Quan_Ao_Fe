@@ -5,7 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Data, Router } from '@angular/router';
-import { ToastServiceService } from '../../shared/toast-service.service';
+import { ToastServiceService } from '../../service/toast-service.service';
 import { HoaDonComponent } from './hoa-don/hoa-don.component';
 import {  HoaDonUser, HoaDonService } from './hoadon.service';
 import * as signalR from '@microsoft/signalr';

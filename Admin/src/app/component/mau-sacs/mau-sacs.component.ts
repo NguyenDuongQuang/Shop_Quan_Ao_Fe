@@ -6,7 +6,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { ToastServiceService } from '../../shared/toast-service.service';
+import { ToastServiceService } from '../../service/toast-service.service';
 import { MauSac, MauSacService } from './mau-sac.service';
 import { MauSacComponent } from './mau-sac/mau-sac.component';
 import * as signalR from '@microsoft/signalr';
