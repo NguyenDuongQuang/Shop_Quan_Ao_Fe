@@ -4,7 +4,7 @@ import * as signalR from '@microsoft/signalr';
 import { AfterViewInit, ViewChild } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+//import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { MatDialog } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -26,7 +26,7 @@ export class ProductsComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(public servicespbt: SanPhamBienTheService,
     public service: ProductService,
-    private breakpointObserver: BreakpointObserver,
+   // private breakpointObserver: BreakpointObserver,
     public router: Router,
     public http: HttpClient,
     public dialog: MatDialog,
