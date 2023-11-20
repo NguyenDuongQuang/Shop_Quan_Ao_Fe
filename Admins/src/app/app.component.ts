@@ -12,3 +12,4 @@ export class AppComponent {
     this.isToggled = !this.isToggled;
   }
 }
+

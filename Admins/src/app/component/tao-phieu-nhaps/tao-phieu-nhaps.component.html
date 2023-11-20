@@ -1,0 +1,46 @@
+<button class="mat-button" style="float: left;" onclick="addphieu()">
+    <i class="material-icons">add</i>
+    <p style="display: inline-block;margin-top: 0.9vh;">Thêm</p>
+</button>
+<button class="mat-button" style="float: left;" onclick="exportGeneratePdf()">
+    <p style="display: inline-block;margin-top: 0.9vh;">Export pdf</p>
+</button>
+<div style="display: flex; justify-content: center;">
+    <input type="text" onkeyup="doFilter(event.target.value)" placeholder="Tìm kiếm" style="width: 40%;">
+</div>
+<table class="mat-table" style="width: 100%;">
+    <thead>
+        <tr>
+            <th class="make-gold" (click)="sort('id')">Id</th>
+            <th class="make-gold" (click)="sort('soChungTu')">Số chứng từ</th>
+            <th class="make-gold" (click)="sort('tenNhaCungCap')">Tên nhà cung cấp</th>
+            <th class="make-gold" (click)="sort('ngayTao')">Ngày tạo</th>
+            <th class="make-gold" (click)="sort('tongTien')">Tổng tiền mà shop đã giao dịch</th>
+            <th class="make-gold" (click)="sort('nguoiLapPhieu')">Người lập phiếu</th>
+            <th class="make-gold">Xem chi tiết, xóa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Repeat this row for each data element -->
+        <tr>
+            <td>{{element.id}}</td>
+            <td>{{element.soChungTu}}</td>
+            <td>{{element.tenNhaCungCap}}</td>
+            <td>{{element.ngayTao | date: 'dd-MM-yyyy'}}</td>
+            <td>{{element.tongTien | number}} VNĐ</td>
+            <td>{{element.nguoiLapPhieu}}</td>
+            <td>
+                <button onclick="populateForm(element.id)" class="mat-icon-button" style="color: blue;">
+                    <i class="material-icons">visibility</i>
+                </button>
+                <button onclick="clickDelete(element.id)" class="mat-icon-button" style="color: red;">
+                    <i class="material-icons">delete</i>
+                </button>
+            </td>
+        </tr>
+        <!-- End of repeated row -->
+    </tbody>
+</table>
+<div>
+    <!-- Add pagination logic here if needed -->
+</div>

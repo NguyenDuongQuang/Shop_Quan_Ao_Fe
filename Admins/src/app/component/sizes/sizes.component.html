@@ -1,0 +1,48 @@
+<button class="mat-button" style="float: left;" disabled="true" onclick="onModalDialog()">
+    <span>Thêm</span>
+</button>
+<div style="display: flex; justify-content: center;">
+    <input type="text" onkeyup="doFilter(event.target.value)" placeholder="Tìm kiếm">
+</div>
+<table class="mat-table mat-elevation-z8" style="width: 100%;">
+    <thead>
+        <tr>
+            <th class="make-gold"> Id </th>
+            <th class="make-gold"> Tên Size </th>
+            <th class="make-gold"> Loại </th>
+            <th class="make-gold"> Sửa, xóa </th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Replace 'service.dataSource' with the actual data source in your implementation -->
+        <!-- You can use server-side rendering or client-side rendering with a JavaScript framework -->
+        <!-- For simplicity, I'm using static data here -->
+        <tr>
+            <td>1</td>
+            <td>Tên Size 1</td>
+            <td>Loại 1</td>
+            <td>
+                <button onclick="populateForm({ id: 1, tenSize: 'Tên Size 1', tenLoai: 'Loại 1' })" class="mat-icon-button" color="primary">
+                    <span>Sửa</span>
+                </button>
+                <a onclick="clickDelete(1)" class="mat-icon-button" color="warn">
+                    <span>Xóa</span>
+                </a>
+            </td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+<div>
+    <div>
+        <!-- Implement pagination logic as needed -->
+        <!-- For simplicity, I'm displaying page size options only -->
+        <select>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+        </select>
+    </div>
+</div>

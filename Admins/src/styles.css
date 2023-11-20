@@ -2,51 +2,43 @@
 @import '../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css';
 @import '../node_modules/ag-grid-community/dist/styles/ag-grid.css';
 @import "~@ng-select/ng-select/themes/default.theme.css";
-
 html, body {
   height: 100%;
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
+} */
+/* :root {
+  --main-bg-color: #3498db; 
+  --main-text-color: #ffffff; 
+  --second-text-color: #34495e; 
+  --second-bg-color: #ecf0f1; 
 }
-
-:root {
-  --main-bg-color: #009d63;
-  --main-text-color: #009d63;
-  --second-text-color: #bbbec5;
-  --second-bg-color: #c1efde;
-}
-
 .primary-text {
   color: var(--main-text-color);
 }
-
 .second-text {
   color: var(--second-text-color);
 }
-
 .primary-bg {
   background-color: var(--main-bg-color);
 }
-
 .secondary-bg {
   background-color: var(--second-bg-color);
 }
-
 .rounded-full {
   border-radius: 100%;
 }
-
 #wrapper {
   overflow-x: hidden;
   background-image: linear-gradient(
     to right,
-    #baf3d7,
-    #c2f5de,
-    #cbf7e4,
-    #d4f8ea,
-    #ddfaef
+    #3498db,
+    #5dade2,
+    #85c1e9,
+    #aed6f1,
+    #d6eaf8
   );
 }
 
@@ -105,9 +97,7 @@ html, body {
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
-
 }
-
 
 html, body {
   height: 100%;
@@ -115,5 +105,5 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } */

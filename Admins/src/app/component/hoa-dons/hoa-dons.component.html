@@ -1,0 +1,51 @@
+<!-- <button style="background-color: #007bff; color: #fff; float: left;" onclick="exportGeneratePdf()">
+    <span style="display: inline-block; margin-top: 0.9vh;">Export exel</span>
+</button> -->
+<button style="background-color: #dc3545; color: #fff; float: left;" onclick="exportGeneratePdf()">
+    <!-- exports() -->
+    <span style="display: inline-block; margin-top: 0.9vh;">Export pdf</span>
+</button>
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+    <input type="text" onkeyup="doFilter(event.target.value)" placeholder="Tìm kiếm">
+</div>
+<table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+    <thead>
+        <tr style="background-color: #007bff; color: #fff;">
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('id')">Id</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('fullName')">User</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('ngayTao')">Ngày tạo</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('ghiChu')">Ghi chú</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('tongTien')">Tổng tiền</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px; cursor: pointer;" onclick="sortTable('trangThai')">Trạng thái</th>
+            <th style="border: 1px solid #dee2e6; padding: 8px;">Xem chi tiết, sửa</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Use a loop or some method to populate table rows -->
+        <tr>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">{{element.id}}</td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">{{element.fullName}}</td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">{{element.ngayTao | date: 'dd-MM-yyyy'}}</td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">{{element.ghiChu}}</td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">{{element.tongTien | number}} VNĐ</td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">
+                <p *ngIf="element.trangThai==0">Chưa xác nhận</p>
+                <p *ngIf="element.trangThai==1">Đã xác nhận</p>
+                <p *ngIf="element.trangThai==2">Hoàn thành</p>
+                <p *ngIf="element.trangThai==3">Đã hủy</p>
+            </td>
+            <td style="border: 1px solid #dee2e6; padding: 8px;">
+                <button style="background-color: #007bff; color: #fff;" onclick="routeChiTiet(element)">
+                    <span style="vertical-align: middle;">Xem chi tiết</span>
+                </button>
+                <button style="background-color: #007bff; color: #fff;" onclick="populateForm(element)">
+                    <span style="vertical-align: middle;">Sửa</span>
+                </button>
+            </td>
+        </tr>
+        <!-- Repeat rows as needed -->
+    </tbody>
+</table>
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+    <!-- Paginator HTML or other pagination controls -->
+</div>
