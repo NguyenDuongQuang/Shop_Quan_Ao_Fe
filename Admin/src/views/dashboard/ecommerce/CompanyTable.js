@@ -26,6 +26,7 @@ const CompanyTable = ({ statusCount }) => {
     },
       {
         // img: require("@Assets/images/icons/toolbox.svg").default,
+        
         name: "Khách hàng",
         // email: "meguc@ruj.io",
         // icon: <Monitor size={18} />,

@@ -12,7 +12,7 @@ const Banner: React.FC = () => {
     autoplaySpeed: 2000,
   };
   const listBanner = [
-    "https://png.pngtree.com/thumb_back/fw800/background/20220929/pngtree-shoes-promotion-banner-background-image_1466238.jpg",
+    "https://pkmacbook.com/wp-content/uploads/2021/07/banner-thoi-trang-nu-hien-dai_113857960.png",
   ];
   return (
     <Slider {...settings} className="overflow-hidden">
