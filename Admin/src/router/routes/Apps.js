@@ -365,6 +365,12 @@ const AppRoutes = [
 
   },
   {
+    path: "/cms/ordertaiquay/bill/list",
+    component: lazy(() => import("../../views/apps/bill/list/index")),
+  roles:['admin']
+
+  },
+  {
     path: "/cms/promotion/product/add",
     component: lazy(() => import("../../views/apps/promotion/product/add/index")),
   roles:['admin']
