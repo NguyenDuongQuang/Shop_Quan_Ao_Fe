@@ -29,18 +29,6 @@ const AppRoutes = [
     component: lazy(() => import("../../views/apps/invoice/list")),
     roles:['admin','employee']
   },
-  // {
-  //   path: "/apps/invoice/preview/:id",
-  //   component: lazy(() => import("../../views/apps/invoice/preview")),
-  //   meta: {
-  //     navLink: "/apps/invoice/preview",
-  //   },
-  // },
-  // {
-  //   path: "/apps/invoice/preview",
-  //   exact: true,
-  //   component: () => <Redirect to="/apps/invoice/preview/4987" />,
-  // },
   {
     path: "/cms/invoice/edit/:id",
     component: lazy(() => import("../../views/apps/invoice/edit/index")),
@@ -50,52 +38,6 @@ const AppRoutes = [
     roles:['admin','employee']
 
   },
- 
-  
-  // {
-  //   path: "/apps/invoice/add",
-  //   component: lazy(() => import("../../views/apps/invoice/add")),
-  //   roles:['admin','employee']
-
-  // },
-  // {
-  //   path: "/apps/invoice/print",
-  //   layout: "BlankLayout",
-  //   component: lazy(() => import("../../views/apps/invoice/print")),
-  // },
-  // {
-  //   path: "/apps/ecommerce/shop",
-  //   className: "ecommerce-application",
-  //   component: lazy(() => import("../../views/apps/ecommerce/shop")),
-  // },
-  // {
-  //   path: "/apps/ecommerce/wishlist",
-  //   className: "ecommerce-application",
-  //   component: lazy(() => import("../../views/apps/ecommerce/wishlist")),
-  // },
-  // {
-  //   path: "/apps/ecommerce/product-detail",
-  //   exact: true,
-  //   className: "ecommerce-application",
-  //   component: () => (
-  //     <Redirect to="/apps/ecommerce/product-detail/apple-i-phone-11-64-gb-black-26" />
-  //   ),
-  // },
-  // {
-  //   path: "/apps/ecommerce/product-detail/:product",
-  //   exact: true, 
-  //   className: "ecommerce-application",
-  //   component: lazy(() => import("../../views/apps/ecommerce/detail")),
-  //   meta: {
-  //     navLink: "/apps/ecommerce/product-detail",
-  //   },
-  // },
-  // {
-  //   path: "/apps/ecommerce/checkout",
-  //   className: "ecommerce-application",
-  //   component: lazy(() => import("../../views/apps/ecommerce/checkout")),
-  // },
-  //EMPLOYEE
   {
     path: "/cms/employee/list",
     component: lazy(() => import("../../views/apps/employee/list")),
@@ -132,11 +74,6 @@ const AppRoutes = [
     roles:['admin','employee']
 
   },
-  // {
-  //   path: '/cms/customer/add',
-  //   component: lazy(() => import('../../views/apps/customer/add/index'))
-  // },
-
   {
     path: "/cms/customer/edit/",
     exact: true,
@@ -380,30 +317,6 @@ const AppRoutes = [
   roles:['admin']
 
   },
-  //category
-  // {
-  //   path: "/cms/classify/category/list",
-  //   component: lazy(() => import("../../views/apps/property-product/index")),
-
-  // },
-  // {
-  //   path: "/cms/classify/category/add",
-  //   component: lazy(() => import("../../views/apps/classify-product/category/add/index")),
-  // },
-
-  // {
-  //   path: "/cms/classify/category/edit/",
-  //   exact: true,
-  //   component: () => <Redirect to="/cms/classify/category/edit/1" />,
-  // },
-  // {
-  //   path: "/cms/classify/category/edit/:id",
-  //   component: lazy(() => import("../../views/apps/classify-product/category/edit/index")),
-  //   meta: {
-  //     navLink: "/cms/classify/category/edit/",
-  //   },
-  // },
-  //product
   {
     path: "/cms/product/list",
     component: lazy(() => import("../../views/apps/product/list/index")),
