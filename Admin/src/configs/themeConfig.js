@@ -3,7 +3,7 @@
 //Template config options
 const themeConfig = {
   app: {
-    appName: "CMS",
+    appName: "FIVE-START",
     appLogoImage: require("@Assets/images/logo/logo.svg").default,
   },
   layout: {

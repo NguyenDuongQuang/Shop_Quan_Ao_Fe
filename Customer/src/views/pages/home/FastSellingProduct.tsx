@@ -91,7 +91,7 @@ export default function FastSellingProduct() {
   return (
     <>
       <div className="container w-full  lg:px-2 ">
-        <h1 className="my-10 font-bold">Xỏ ngay, yêu luôn</h1>
+        <h1 className="my-10 font-bold">TẤT CẢ SẢN PHẨM </h1>
         {data?.data?.length > 0 && (
           <div>
             <Slider {...settings}>
@@ -302,7 +302,7 @@ export default function FastSellingProduct() {
           </div>
         </div>
       )}
-      <div className="container my-14   w-full px-2  sm:px-0">
+      {/* <div className="container my-14   w-full px-2  sm:px-0">
         <div className="bg-gray-100">
           <div className="">
             <div className="grid grid-cols-2">
@@ -334,10 +334,10 @@ export default function FastSellingProduct() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* <div className="container my-14   w-full px-2  sm:px-0">
-        <h1 className="mt-20 text-4xl font-bold">FUSAMATE BASIC</h1>
+      <div className="container my-14   w-full px-2  sm:px-0">
+        <h1 className="mt-20 text-4xl font-bold">CÁC FORM DÁNG BASIC</h1>
         <div className="bg-white">
           <div className="">
             <nav aria-label="Breadcrumb">
@@ -381,7 +381,7 @@ export default function FastSellingProduct() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* <div className="container my-14   w-full px-2  sm:px-0">
         <BannerFooter />
       </div> */}

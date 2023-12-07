@@ -1,11 +1,12 @@
-import Banner from "@Views/pages/Banner";
+import Banner from "@Views/pages/Banner/Banner";
 import FastSellingProduct from "@Views/pages/home/FastSellingProduct";
 
 const Home = () => {
   
   return (
     <>
-      <Banner />
+      {/* <Banner /> */}
+      <Banner/>
       <FastSellingProduct />
       
       {/* <ComboProduct /> */}
