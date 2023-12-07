@@ -385,7 +385,7 @@ export default function FastSellingProduct() {
       {/* <div className="container my-14   w-full px-2  sm:px-0">
         <BannerFooter />
       </div> */}
-      <div className="container my-14   w-full px-2  sm:px-0">
+      {/* <div className="container my-14   w-full px-2  sm:px-0">
         <div className="">
           <div className="">
             <div className="grid grid-cols-2 gap-10">
@@ -406,8 +406,8 @@ export default function FastSellingProduct() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container my-14   w-full px-2  sm:px-0">
+      </div> */}
+      {/* <div className="container my-14   w-full px-2  sm:px-0">
         <div className="bg-gray-100">
           <div className="">
             <div className="grid grid-cols-2">
@@ -443,7 +443,7 @@ export default function FastSellingProduct() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

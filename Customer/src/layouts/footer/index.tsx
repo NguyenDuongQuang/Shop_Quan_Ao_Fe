@@ -43,7 +43,7 @@ function Footer() {
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Hotline 1900.272737 (028.7777.2737)
+                      Hotline 1900.272737 (096.595.3837)
                     </Link>
                   </li>
                   <li className="mb-4">
@@ -52,7 +52,7 @@ function Footer() {
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Email balbla@gmail.com
+                      Email: ndq1234pn@gmail.com
                     </Link>
                   </li>
 
@@ -106,52 +106,43 @@ function Footer() {
               </div>
               <div>
                 <h3 className="mb-6 text-sm font-semibold uppercase text-white dark:text-white">
-                  Khám phá
+                  Thương Hiệu Nổi Bật
                 </h3>
                 <ul>
                   <li className="mb-4">
                     <Link
-                      to={"#"}
+                      to={"https://owen.vn/"}
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Giày Sneaker
+                      OWEN
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      to={"#"}
+                      to={"https://juno.vn/"}
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Giày thể thao
+                      JUNO
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      to={"#"}
+                      to={"http://www.novelty.com.vn/"}
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Giày Gucci
+                      NOVELTY
                     </Link>
                   </li>
                   <li className="mb-4">
                     <Link
-                      to={"#"}
+                      to={"https://theblues.com.vn/en/"}
                       target="_blank"
                       className="text-sm text-white hover:underline "
                     >
-                      Giày Nam
-                    </Link>
-                  </li>
-                  <li className="mb-4">
-                    <Link
-                      to={"#"}
-                      target="_blank"
-                      className="text-sm text-white hover:underline "
-                    >
-                      Gìay nữ
+                      BLUE EXCHANGE
                     </Link>
                   </li>
                 </ul>
