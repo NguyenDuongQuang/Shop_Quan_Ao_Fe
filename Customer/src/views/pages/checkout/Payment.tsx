@@ -259,8 +259,6 @@ export default function Payment(props: PropsPayment) {
                   rules={{ required: "Vui lòng nhập trường này" }}
                   render={({ field }) => (
                     <Combobox
-                      // value={selectedProvince}
-                      // onChange={setSelectedProvince}
                       {...field}
                       onChange={(e: any) => {
                         field.onChange(e);

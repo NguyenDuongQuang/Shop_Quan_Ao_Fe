@@ -17,7 +17,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 const navigation = {
   // about: [{ name: "Giới thiệu", href: "/about" }],
-  about: [{ name: "", href: "" }],
+  about: [{ name: "Giới Thiệu", href: "/about" }],
   categories: [
     {
       id: "product",
@@ -83,6 +83,7 @@ const navigation = {
     { name: "Liên hệ", href: "/contact" },
     // { name: "Chọn size", href: "/size" },
   ],
+  
 };
 
 interface Menu {
@@ -724,7 +725,6 @@ export default function Header() {
               </Popover.Group>
 
               <div className="ml-auto flex items-center">
-                {/* Search */}
                 <div
                   className="flex lg:ml-4"
                   onClick={() => setShowSearch(!showSearch)}

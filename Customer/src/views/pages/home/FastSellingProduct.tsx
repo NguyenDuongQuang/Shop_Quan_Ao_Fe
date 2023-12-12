@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
-import BannerFooter from "@Views/pages/BannerFooter";
 import { ToastContent } from "../product/product-detail";
 
 export default function FastSellingProduct() {
@@ -82,8 +81,6 @@ export default function FastSellingProduct() {
     return classes.filter(Boolean).join(" ");
   }
 
-  // const [selected, setSelected] = useState<any>();
-  // const [selectedSize, setSelectedSize] = useState<any>();
   const numberToCurrencyStyle = (x: any) => {
     return x?.toString()?.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   };
@@ -302,40 +299,6 @@ export default function FastSellingProduct() {
           </div>
         </div>
       )}
-      {/* <div className="container my-14   w-full px-2  sm:px-0">
-        <div className="bg-gray-100">
-          <div className="">
-            <div className="grid grid-cols-2">
-              <div className="col-span-2 lg:col-span-1">
-                <div className="py-10 px-14">
-                  <h1 className="text-black">Dành cho chính bạn</h1>
-                  <p className="text-sm text-black">
-                    Người đàn ông tốt là người tự biết chăm sóc bản thân anh ấy.
-                    Vì đàn ông cũng có quyền được nhận quà, và nếu như bạn chưa
-                    có QUÀ, thì hãy tự tin tự sắm cho mình một hộp đồ cửa hàng
-                    giày của chúng tôi.
-                  </p>
-                  <button
-                    type="submit"
-                    className="mt-6  items-center justify-center rounded-md border border-transparent bg-black py-1 px-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                  >
-                    Tìm hiểu thêm
-                  </button>
-                </div>
-              </div>
-              <div className="col-span-2 lg:col-span-1">
-                <img
-                  width={"100%"}
-                  height={300}
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_9nUTgn7S27advSTpj46kLIpepYFaqKv2Q&usqp=CAU"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className="container my-14   w-full px-2  sm:px-0">
         <h1 className="mt-20 text-4xl font-bold">CÁC FORM DÁNG BASIC</h1>
         <div className="bg-white">
@@ -382,68 +345,6 @@ export default function FastSellingProduct() {
           </div>
         </div>
       </div>
-      {/* <div className="container my-14   w-full px-2  sm:px-0">
-        <BannerFooter />
-      </div> */}
-      {/* <div className="container my-14   w-full px-2  sm:px-0">
-        <div className="">
-          <div className="">
-            <div className="grid grid-cols-2 gap-10">
-              <div className=" col-span-2 lg:col-span-1">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxWG0mi-MaUCV5AbM8rZH6QrSHIRvc7KhiMw&usqp=CAU"
-                  alt=""
-                  className="h-full w-full"
-                />
-              </div>
-              <div className=" col-span-2 lg:col-span-1">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZxpvUFYANT2TMyhTmmBo03IJiIjXl-n2jw&usqp=CAU"
-                  alt=""
-                  className="h-full w-full"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className="container my-14   w-full px-2  sm:px-0">
-        <div className="bg-gray-100">
-          <div className="">
-            <div className="grid grid-cols-2">
-              <div className="col-span-2 lg:col-span-1">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFARo6r_WSKQtRmYXRZQ1PigkfmK6SnNqwLw&usqp=CAU"
-                  alt=""
-                  className="h-full w-full"
-                />
-              </div>
-              <div className="col-span-2 lg:col-span-1">
-                <div className="py-10 px-14">
-                  <h1
-                    className="text-start text-6xl text-black "
-                    style={{ lineHeight: "75px" }}
-                  >
-                    Trải nghiệm mua sắm hài lòng với cửa hàng giày của chúng tôi
-                  </h1>
-                  <p className="text-sm text-black">Giá cả hợp lý</p>
-                  <p className="text-sm text-black">Dịch vụ 100% hài lòng</p>
-                  <p className="text-sm text-black">60 ngày đổi trả</p>
-                  <p className="text-sm text-black">
-                    Tự hào sản xuất tại Việt Nam
-                  </p>
-                  <button
-                    type="submit"
-                    className="mt-6  items-center justify-center rounded-md border border-transparent bg-black py-1 px-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                  >
-                    Tìm hiểu thêm
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

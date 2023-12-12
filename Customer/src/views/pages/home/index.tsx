@@ -5,13 +5,8 @@ const Home = () => {
   
   return (
     <>
-      {/* <Banner /> */}
       <Banner/>
       <FastSellingProduct />
-      
-      {/* <ComboProduct /> */}
-      {/* <ProductFeature />
-      <ProductOverview /> */}
     </>
   );
 };
