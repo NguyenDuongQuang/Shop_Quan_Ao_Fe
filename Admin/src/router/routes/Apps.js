@@ -39,6 +39,20 @@ const AppRoutes = [
 
   },
   {
+    path: "/cms/ordertaiquay/list",
+    component: lazy(() => import("../../views/apps/ordertaiquay/list")),
+    roles:['admin','employee']
+  },
+  {
+    path: "/cms/ordertaiquay/edit/:id",
+    component: lazy(() => import("../../views/apps/ordertaiquay/edit/index")),
+    meta: {
+      navLink: "/cms/ordertaiquay/edit",
+    },
+    roles:['admin','employee']
+
+  },
+  {
     path: "/cms/employee/list",
     component: lazy(() => import("../../views/apps/employee/list")),
     roles:['admin']

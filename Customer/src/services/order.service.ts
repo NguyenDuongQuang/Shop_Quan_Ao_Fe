@@ -47,7 +47,7 @@ export const orderApi = createApi({
     paymentVnpay: build.mutation({
       query: (body) => {
         return {
-          url: "public/payment/vnpay",
+          url: "public/payment/create",
           method: "POST",
           body,
         };

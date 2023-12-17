@@ -41,7 +41,7 @@ const location = useLocation()
       cartId: data.id,
     };
     await checkout(customData).then(async (res: any) => {
-      console.log(res);
+      console.log("res ====>", res);
       
       if (res?.error?.data?.message||res?.error?.data?.error) {
         toast.info(res?.error?.data?.message||res?.error?.data?.error);
@@ -60,11 +60,11 @@ const location = useLocation()
       if (selectedPayment?.value == "2") {
 
         await paymentVnpay({
-          orderId: res?.data?.id,
-          vnp_OrderInfo: "Thanh toán hoá đơn",
+          id: res?.data?.id,
+          totalPayment: res.data.totalPayment
         }).then((res:any) => {
         // navigate("checkout-success", { state: { data: res } });
-          window.location.href=res?.data?.data
+          window.location.href=res?.data?.createURL
         });
       }
       else{

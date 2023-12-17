@@ -49,6 +49,7 @@ export default function FastSellingProduct() {
       },
     ],
   };
+  
 
   const handleAddCart = async (value: any) => {
     const device_user = uuidv4();

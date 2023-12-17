@@ -27,8 +27,8 @@ const plans = [
     value: "1",
   },
   {
-    name: "Thanh toán bằng VNPAY",
-    ram: "",
+    name: "Chuyển Khoản Ngân Hàng",
+    ram: "Thanh toán bằng VNPAY",
     value: "2",
   },
 ];
@@ -106,6 +106,7 @@ export default function Payment(props: PropsPayment) {
 
   const onSubmit = (data: any) => {
     props.submitInfo(data, selectedPayment);
+    console.log(data)
   };
 
   const [queryProvinces, setQueryProvinces] = useState("");
@@ -353,20 +354,6 @@ export default function Payment(props: PropsPayment) {
                     </Combobox>
                   )}
                 />
-
-                {/* <select
-                  {...register("province", { required: true })}
-
-                  autoComplete="country-name"
-                  className="border-gray-300 bg-white focus:border-indigo-500 focus:ring-indigo-500 mt-1 block w-full rounded-md border py-2 px-3 shadow-sm focus:outline-none sm:text-sm"
-                >
-                  <option>Chọn tỉnh thành</option>
-                  {provinces.data?.data?.map((province: any, index: number) => (
-                    <option key={index} value={province?.ProvinceID}>
-                      {province?.ProvinceName}
-                    </option>chọ
-                  ))}
-                </select> */}
               </div>
               <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                 <label
@@ -382,8 +369,6 @@ export default function Payment(props: PropsPayment) {
                   rules={{ required: "Vui lòng nhập trường này" }}
                   render={({ field }) => (
                     <Combobox
-                      // value={selectedDistrict}
-                      // onChange={setSelectedDistrict}
                       {...field}
                       onChange={(e: any) => {
                         field.onChange(e);
@@ -598,101 +583,13 @@ export default function Payment(props: PropsPayment) {
               </div>
             </div>
           </div>
-          {/* <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
-                      <button
-                        type="submit"
-                        className="border-transparent bg-black text-white text-white  hover:opacity-70 focus:ring-indigo-500 inline-flex justify-center rounded-md border py-2 px-4 text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2"
-                      >
-                        Save
-                      </button>
-                    </div> */}
         </div>
         <div className="mt-8 md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-full md:mt-0">
             <h1 className="mb-7 text-center text-lg font-bold leading-6  text-gray-900">
               Hình thức thanh toán
             </h1>
-            {/* <form action="#" method="POST" className="my-2 ">
-            <div className="overflow-hidden shadow sm:rounded-md">
-              <label className="hover:bg-gray-50 bg-gray-50 group relative flex cursor-pointer rounded-md border py-3 px-4 text-sm font-medium uppercase text-c2i-light focus:outline-none sm:flex-1 sm:py-4">
-                <input
-                  type="radio"
-                  name="size-choice"
-                  value="XXS"
-                  className="sr-only"
-                  aria-labelledby="size-choice-0-label"
-                />
-                <span id="size-choice-0-label">Thanh toán bằng Momo</span>
-
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute -inset-px rounded-md border-2 border-c2i-light"
-                ></span>
-              </label>
-            </div>
-          </form>
-          <form action="#" method="POST" className="my-2 ">
-            <div className="overflow-hidden shadow sm:rounded-md">
-              <label className="hover:bg-gray-50 bg-gray-50 group relative flex cursor-pointer rounded-md border py-3 px-4 text-sm font-medium uppercase text-c2i-light focus:outline-none sm:flex-1 sm:py-4">
-                <input
-                  type="radio"
-                  name="size-choice"
-                  value="XXS"
-                  className="sr-only"
-                  aria-labelledby="size-choice-0-label"
-                />
-                <span id="size-choice-0-label">Thanh toán bằng Momo</span>
-
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute -inset-px rounded-md border-2 border-c2i-light"
-                ></span>
-              </label>
-            </div>
-          </form>
-          <form action="#" method="POST" className="my-2 ">
-            <div className="overflow-hidden shadow sm:rounded-md">
-              <label className="hover:bg-gray-50 bg-gray-50 group relative flex cursor-pointer rounded-md border py-3 px-4 text-sm font-medium uppercase text-c2i-light focus:outline-none sm:flex-1 sm:py-4">
-                <input
-                  type="radio"
-                  name="size-choice"
-                  value="XXS"
-                  className="sr-only"
-                  aria-labelledby="size-choice-0-label"
-                />
-                <span id="size-choice-0-label">Thanh toán bằng Momo</span>
-
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute -inset-px rounded-md border-2 border-c2i-light"
-                ></span>
-              </label>
-            </div>
-          </form>
-          <form action="#" method="POST" className="my-2 ">
-            <div className="overflow-hidden shadow sm:rounded-md">
-              <label className="hover:bg-gray-50 bg-gray-50 text-gray-200  group relative flex cursor-pointer rounded-md border border-c2i-light py-3 px-4 text-sm font-medium uppercase focus:outline-none sm:flex-1 sm:py-4">
-                <input
-                  type="radio"
-                  name="size-choice"
-                  value="XXS"
-                  className="sr-only"
-                  aria-labelledby="size-choice-0-label"
-                />
-                <span id="size-choice-0-label">
-                  Thanh toán tài khoản ngân hàng
-                </span>
-
-                <span
-                  aria-hidden="true"
-                  className="border-gray-200 pointer-events-none absolute -inset-px
-rounded-md
-border-2
-"
-                ></span>
-              </label>
-            </div>
-          </form> */}
+        
             <RadioGroup value={selectedPayment} onChange={setSelectedPayment}>
               <RadioGroup.Label className="sr-only">
                 Server size
