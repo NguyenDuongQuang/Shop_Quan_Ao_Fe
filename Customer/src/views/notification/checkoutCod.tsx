@@ -36,18 +36,18 @@ const CheckoutSuccessCod = () => {
             <div className="text-center ">
               {" "}
               <p className="text-lg">
-                      Cảm Ơn Bạn Vì Đã Chọn Tin Tưởng Shop Five-Start Chúng Tôi,Rất Hân Hạnh Được Phục Vụ Bạn!
-                    </p>
-                    <div className="my-5 text-sm">
-                      Đơn Hàng Của Bạn Đã Được Chuyển Tới Hệ Thống Xử
-                      Lí Đơn Hàng Của Shop.
-                      <br />
-                      Trong Quá Trình Xử Lý Shop Sẽ Liên Hệ Lại Nếu Như Cần
-                      Thêm Thông Tin Của Bạn.
-                      <br />
-                      Ngoài Ra Shop Cũng Sẽ Có Gửi Xác Nhận Đơn Hàng Hằng
-                      Email Hoặc Tin Nhắn
-                    </div>
+                Cuộc sống có nhiều lựa chọn. Cảm ơn bạn đã chọn FUSAMATE, Kenny!
+              </p>
+              <div className="my-5 text-sm">
+                Đơn hàng của bạn CHẮC CHẮN đã được chuyển tới hệ thống xử lí đơn
+                hàng của FUSAMATE.
+                <br />
+                Trong quá trình xử lý FUSAMATE sẽ liên hệ lại nếu như cần thêm
+                thông tin từ bạn.
+                <br />
+                Ngoài ra FUSAMATE cũng sẽ có gửi xác nhận đơn hàng bằng Email và
+                tin nhắn
+              </div>
             </div>
             <div className="grid grid-flow-col  grid-cols-3 gap-10">
               <div className=" col-span-full lg:col-span-2  ">

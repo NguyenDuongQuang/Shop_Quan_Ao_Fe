@@ -18,8 +18,6 @@ import Spinner from './@core/components/spinner/Fallback-spinner'
 // ** Ripple Button
 import './@core/components/ripple-button'
 
-// import 'assets/scss/App.scss';
-
 // ** Fake Database
 import './@fake-db'
 
@@ -38,9 +36,6 @@ import '@Styles/react/libs/toastify/toastify.scss'
 import './@core/assets/fonts/feather/iconfont.css'
 import './@core/scss/core.scss'
 import './assets/scss/style.scss'
-
-
-
 
 // ** Service Worker
 import * as serviceWorker from './serviceWorker'

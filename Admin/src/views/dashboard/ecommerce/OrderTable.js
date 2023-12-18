@@ -7,7 +7,6 @@ import {
   TrendingUp,
   TrendingDown,
 } from "react-feather";
-import TopProduct from "../../apps/product/list/TopProduct";
 
 const OrderTable = ({ statusCount }) => {
   const data = [
@@ -95,7 +94,6 @@ const OrderTable = ({ statusCount }) => {
     });
   };
 
-  
   return (
     <Card className="card-company-table">
       <Table responsive>
@@ -127,10 +125,7 @@ const OrderTable = ({ statusCount }) => {
         <tbody>{renderData()}</tbody>
       </Table>
     </Card>
-    
   );
-  
-
 };
 
 export default OrderTable;

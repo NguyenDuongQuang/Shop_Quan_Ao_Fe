@@ -109,16 +109,16 @@ const PreviewCard = ({ data }) => {
               Đơn hàng <span className="invoice-number">#{data?.id}</span>
             </h4>
             <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">- Thời gian tạo:</p>
+              <p className="invoice-date-title">- Thời Gian Tạo</p>
               <p className="invoice-date">{data?.createdAt}</p>
             </div>
             <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">- Thời gian cập nhật:</p>
+              <p className="invoice-date-title">- Thời Gian Cập Nhật:</p>
               <p className="invoice-date">{data?.updatedAt}</p>
             </div>
             <div className="invoice-date-wrapper">
               <p className="invoice-date-title">
-                - Được cập nhật bởi:{" "}
+                - Người Cập Nhật:{" "}
                 <span className="text-primary font-weight-bold">
                   {data?.updatedBy}
                 </span>
@@ -126,7 +126,7 @@ const PreviewCard = ({ data }) => {
             </div>
           </div>
           <div className="mt-md-0 mt-2  p-0 col-lg-4">
-            <h4 className="invoice-title mb-2">Thông tin vận chuyển</h4>
+            <h4 className="invoice-title mb-2">Thông Tin Khách Hàng</h4>
             <div className="invoice-date-wrapper">
               <p className="invoice-date-title">
                 - Tên khách hàng:{" "}

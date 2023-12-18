@@ -61,9 +61,8 @@ const location = useLocation()
 
         await paymentVnpay({
           id: res?.data?.id,
-          totalPayment: res.data.totalPayment
+          totalPayment: res.data.totalPayment,
         }).then((res:any) => {
-        // navigate("checkout-success", { state: { data: res } });
           window.location.href=res?.data?.createURL
         });
       }
@@ -78,11 +77,6 @@ const location = useLocation()
     setFeeShip(fee);
   };
   const handleGetCart = async () => {
-  // const result:any=  await triggerGetCart(localStorage.getItem("device_user")).then((res) => {
-  //     setData(res.data);
-  //   }).catch(()=>{
-  //     setData([])
-  //   });
   const result:any=  await triggerGetCart(localStorage.getItem("device_user"))
 
 

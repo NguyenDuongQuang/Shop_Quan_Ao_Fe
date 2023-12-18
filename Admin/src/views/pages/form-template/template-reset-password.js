@@ -55,9 +55,9 @@ const TemplateResetPassword = () => {
                                     khoản của mình hoặc cần sự trợ giúp của
                                     chúng tôi để giữ tài khoản, vui lòng liên hệ
                                     với chúng tôi tại
-                                    <a href="mailto: fivestart.me@gmail.com">
+                                    <a href="mailto: fusamate.me@gmail.com">
                                       {" "}
-                                      fivestart.me@gmail.com
+                                      fusamate.me@gmail.com
                                     </a>
                                     
                                   </p>
@@ -74,14 +74,14 @@ const TemplateResetPassword = () => {
                                     Không chắc tại sao bạn lại nhận được email
                                     này?
                                     <br></br>
-                                    <a href="mailto: fivestart.me@gmail.com">
+                                    <a href="mailto: fusamate.me@gmail.com">
                                       {" "}
                                       Xin vui lòng cho chúng tôi biết.
                                     </a>
                                     .
                                   </p>
                                   <p>
-                                    Cảm ơn, <br></br>FIVESTART
+                                    Cảm ơn, <br></br>FUSAMATE
                                   </p>
                                 </td>
                               </tr>

@@ -1,4 +1,4 @@
-import { Home, Circle, FileText, ShoppingBag,ShoppingCart } from "react-feather";
+import { Home, Circle, FileText, ShoppingBag } from "react-feather";
 
 export default [
   {
@@ -22,23 +22,6 @@ export default [
         title: "Danh sách",
         icon: <Circle size={12} />,
         navLink: "/cms/invoice/list",
-        roles: ["1", "0"],
-      },
-    ],
-  },
-  {
-    id: "order",
-    title: "Bán Hàng",
-    icon: <ShoppingCart size={20} />,
-    navLink: "/cms/ordertaiquay",
-    roles: ["1", "0"],
-
-    children: [
-      {
-        id: "list",
-        title: "Danh sách",
-        icon: <Circle size={12} />,
-        navLink: "/cms/ordertaiquay/list",
         roles: ["1", "0"],
       },
     ],

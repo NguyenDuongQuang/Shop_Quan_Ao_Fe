@@ -31,11 +31,11 @@ const plans = [
     ram: "Thanh toán khi nhận hàng",
     value: "1",
   },
-  // {
-  //   name: "Thanh toán bằng VNPAY",
-  //   ram: "",
-  //   value: "2",
-  // },
+  {
+    name: "Thanh toán bằng VNPAY",
+    ram: "",
+    value: "2",
+  },
 ];
 export default function Cart(props: ICart) {
   const [payment, setPayment] = useState<Payment>();
