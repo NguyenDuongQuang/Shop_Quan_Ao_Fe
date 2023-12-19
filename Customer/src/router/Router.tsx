@@ -14,6 +14,9 @@ const CheckoutSuccess = lazy(() => import("@Views/notification/checkout"));
 const CheckoutSuccessCod = lazy(
   () => import("@Views/notification/checkoutCod")
 );
+const CheckoutFail = lazy(
+  () => import("@Views/notification/checkoutfail")
+);
 const Collection = lazy(() => import("@Views/pages/product/index"));
 const ProductDetail = lazy(
   () => import("@Views/pages/product/product-detail/index")
@@ -171,6 +174,24 @@ const Router = () => {
             }
           />{" "}
           <Route
+           path="/cart/checkout-fail"
+           key={"/cart/checkout-fail"}
+           element={
+             <React.Suspense
+               fallback={
+                 <div className="flex min-h-screen items-center justify-center">
+                   <div
+                     style={{ borderTopColor: "transparent" }}
+                     className="h-20 w-20 animate-spin rounded-full border-4 border-gray-800   transition delay-1000 duration-1000"
+                   ></div>
+                 </div>
+               }
+             >
+               <CheckoutFail />
+             </React.Suspense>
+           }
+         />{" "}
+         <Route
             path="/cart/checkout-success-cod"
             key={"/cart/checkout-success-cod"}
             element={

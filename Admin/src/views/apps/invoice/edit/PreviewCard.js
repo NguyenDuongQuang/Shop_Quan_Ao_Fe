@@ -120,7 +120,7 @@ const PreviewCard = ({ data }) => {
               <p className="invoice-date-title">
                 - Người Cập Nhật:{" "}
                 <span className="text-primary font-weight-bold">
-                  {data?.updatedBy}
+                  {data?.updatedBy} 
                 </span>
               </p>
             </div>
@@ -153,12 +153,8 @@ const PreviewCard = ({ data }) => {
             </div>
           </div>
         </div>
-        {/* /Header */}
       </CardBody>
-
       <hr className="invoice-spacing" />
-
-      {/* Address and Contact */}
       <CardBody className="invoice-padding pt-0">
         <Row className="invoice-spacing">
           <Col className="p-0" lg="8">
@@ -175,9 +171,6 @@ const PreviewCard = ({ data }) => {
           </Col>
         </Row>
       </CardBody>
-      {/* /Address and Contact */}
-
-      {/* Invoice Description */}
       <Table responsive bordered hover>
         <thead>
           <tr>
@@ -193,12 +186,6 @@ const PreviewCard = ({ data }) => {
         <tbody>
           {data?.listOrderDetail?.map((item, index) => (
             <tr key={index}>
-              {/* <td className='py-1'>
-              <p className='card-text font-weight-bold mb-25'>Native App Development</p>
-              <p className='card-text text-nowrap'>
-                Developed a full stack native app using React Native, Bootstrap & Python
-              </p>
-            </td> */}
               <td className="py-1">
                 <span className="font-weight-bold">{item?.id}</span>
               </td>
@@ -224,9 +211,6 @@ const PreviewCard = ({ data }) => {
           ))}
         </tbody>
       </Table>
-      {/* /Invoice Description */}
-
-      {/* Total & Sales Person */}
       <CardBody className="invoice-padding pb-0 px-5">
         <Row className="invoice-sales-total-wrapper  justify-content-between">
           <Col className="mt-md-0 mt-3" md="6" order={{ md: 1, lg: 2 }}></Col>
@@ -274,9 +258,6 @@ const PreviewCard = ({ data }) => {
           </Col>
         </Row>
       </CardBody>
-      {/* /Total & Sales Person */}
-
-      {/* Invoice Note */}
       {data?.note && (
         <>
           <hr className="invoice-spacing" />
@@ -294,29 +275,6 @@ const PreviewCard = ({ data }) => {
       <hr className="invoice-spacing" />
       <Card className="invoice-action-wrapper pb-5" >
         <CardBody className="pb-5">
-          {/* <Button.Ripple color='primary' block className='mb-75' onClick={() => setSendSidebarOpen(true)}>
-          Send Invoice
-        </Button.Ripple>
-        <Button.Ripple color='secondary' block outline className='mb-75'>
-          Download
-        </Button.Ripple>
-        <Button.Ripple
-          color='secondary'
-          tag={Link}
-          to='/apps/invoice/print'
-          target='_blank'
-          block
-          outline
-          className='mb-75'
-        >
-          Print
-        </Button.Ripple> */}
-          {/* <Button.Ripple tag={Link} to={`/apps/invoice/edit/${id}`} color='secondary' block outline className='mb-75'>
-          Edit
-        </Button.Ripple> */}
-          {/* <Col sm="12"> */}
-
-          {/* </Col> */}
           <Button.Ripple
             className="float-right px-5 mx-2"
             color="danger"
@@ -343,17 +301,10 @@ const PreviewCard = ({ data }) => {
               "Cập nhật"
             )}
           </Button.Ripple>
-
-          {/* <Button.Ripple color='primary' className="float-right px-5 mx-2" onClick={() => setAddPaymentOpen(true)}>
-        Trạng thái
-        </Button.Ripple> */}
           <div style={{ width: "200px", float: "right", zIndex: "999" }}>
             <Controller
               control={control}
               name="status"
-              // rules={{
-              //   required: true,
-              // }}
               render={({ field }) => (
                 <Select
                   theme={selectThemeColors}
@@ -390,9 +341,6 @@ const PreviewCard = ({ data }) => {
             <Controller
               control={control}
               name="paymentStatus"
-              // rules={{
-              //   required: true,
-              // }}
               render={({ field }) => (
                 <Select
                   theme={selectThemeColors}
