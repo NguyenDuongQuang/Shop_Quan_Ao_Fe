@@ -38,6 +38,7 @@ const statusBlock = {
     bgr: "light-danger",
   },
 };
+
 const paymentStatusBlock = {
   true: {
     text: "Đã thanh toán",

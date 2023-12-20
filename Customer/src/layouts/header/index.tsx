@@ -321,7 +321,7 @@ export default function Header() {
 
       <header className="relative bg-white">
         <p className="text-c2i-light flex h-10 items-center justify-center bg-slate-800 px-4 text-sm font-medium text-neutral-200 sm:px-6 lg:px-8">
-          Chào Mừng Bạn Đến Với Của Hàng Five-Start Của Chúng Tôi
+          Chào Mừng Bạn Đến Với Của Hàng Five-Stars Của Chúng Tôi
         </p>
 
         {/* <nav

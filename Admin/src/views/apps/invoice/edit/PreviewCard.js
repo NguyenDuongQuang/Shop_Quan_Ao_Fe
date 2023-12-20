@@ -29,6 +29,7 @@ const statusBlock = {
   5: { value: "5", label: "Đã huỷ", number: 6 },
 };
 
+
 const paymentStatusBlock = {
   true: { value: "true", label: "Đã thanh toán", number: 5 },
   false: { value: "false", label: "Chưa thanh toán", number: 6 },
@@ -45,7 +46,7 @@ const PreviewCard = ({ data }) => {
   const [selectedPaymentStatus, setSelectedPaymentStatus] = useState(
     paymentStatusBlock[data?.paymentStatus]
   );
-
+  
   const [disable, setDisable] = useState(false);
   const {
     register,
@@ -109,18 +110,34 @@ const PreviewCard = ({ data }) => {
               Đơn hàng <span className="invoice-number">#{data?.id}</span>
             </h4>
             <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">- Thời Gian Tạo</p>
-              <p className="invoice-date">{data?.createdAt}</p>
-            </div>
-            <div className="invoice-date-wrapper">
-              <p className="invoice-date-title">- Thời Gian Cập Nhật:</p>
-              <p className="invoice-date">{data?.updatedAt}</p>
+              <p className="invoice-date-title">
+                <strong>Thời Gian Tạo : </strong>{" "}
+                <span className="text-primary font-weight-bold">
+                  {data?.createdAt} 
+                </span>
+              </p>
             </div>
             <div className="invoice-date-wrapper">
               <p className="invoice-date-title">
-                - Người Cập Nhật:{" "}
+                <strong>Thời Gian Cập Nhật : </strong>{" "}
+                <span className="text-primary font-weight-bold">
+                  {data?.updatedAt} 
+                </span>
+              </p>
+            </div>
+            <div className="invoice-date-wrapper">
+              <p className="invoice-date-title">
+                <strong>Người Cập Nhật:</strong>{" "}
                 <span className="text-primary font-weight-bold">
                   {data?.updatedBy} 
+                </span>
+              </p>
+            </div>
+            <div className="invoice-date-wrapper">
+              <p className="invoice-date-title">
+                <strong>Trạng Thái:</strong>{" "}
+                <span className="text-primary font-weight-bold">
+                {data?.status===0 ? "Chờ Tiếp Nhận":data.status===1?"Đã Tiếp Nhận":data.status===2?"Đang Xử Lý":data.status===3?"Đang Vận Chuyển":data.status===4?"Đã Giao":data.status===5?"Đã Hủy":data.status}
                 </span>
               </p>
             </div>

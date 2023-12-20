@@ -318,16 +318,6 @@ const InvoiceList = () => {
           </Button>
         </ModalFooter>
       </Modal>
-      {/* <Sidebar
-      size="lg"
-      open={open}
-      title="New User"
-      headerClassName="mb-1"
-      contentClassName="pt-0"
-      toggleSidebar={true}
-    >
-      fdfdf
-    </Sidebar> */}
     </Fragment>
   );
 };

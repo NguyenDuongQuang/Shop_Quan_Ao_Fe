@@ -36,16 +36,16 @@ const CheckoutSuccessCod = () => {
             <div className="text-center ">
               {" "}
               <p className="text-lg">
-                Cuộc sống có nhiều lựa chọn. Cảm ơn bạn đã chọn FIVE-START, Kenny!
+                Cuộc sống có nhiều lựa chọn. Cảm ơn bạn đã chọn FIVE-STARS, Kenny!
               </p>
               <div className="my-5 text-sm">
                 Đơn hàng của bạn CHẮC CHẮN đã được chuyển tới hệ thống xử lí đơn
                 hàng của IVE-START.
                 <br />
-                Trong quá trình xử lý FIVE-START sẽ liên hệ lại nếu như cần thêm
+                Trong quá trình xử lý FIVE-STARS sẽ liên hệ lại nếu như cần thêm
                 thông tin từ bạn.
                 <br />
-                Ngoài ra FIVE-START cũng sẽ có gửi xác nhận đơn hàng bằng Email và
+                Ngoài ra FIVE-STARS cũng sẽ có gửi xác nhận đơn hàng bằng Email và
                 tin nhắn
               </div>
             </div>

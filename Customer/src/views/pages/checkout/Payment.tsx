@@ -42,7 +42,6 @@ export default function Payment(props: PropsPayment) {
   const [user_data, setUserData] = useState<any>(() => {
     try {
       if (localStorage.getItem("user_data")) {
-        // console.log(JSON.parse( || "{}") || null);
         let payload = JSON.parse(localStorage.getItem("user_data") || "{}");
         return payload;
       }
@@ -646,7 +645,7 @@ export default function Payment(props: PropsPayment) {
             </RadioGroup>
             <div className="mt-6">
               <button className="m-auto flex items-center justify-center rounded-md border border-transparent bg-black px-6 py-3 text-base font-medium text-white text-white shadow-sm  hover:opacity-70">
-                Thanh toán
+                Mua Hàng
               </button>
             </div>
             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
