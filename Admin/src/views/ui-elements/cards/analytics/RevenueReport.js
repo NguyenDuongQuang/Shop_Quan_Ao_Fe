@@ -45,22 +45,7 @@ const RevenueReport = (props) => {
   const customerLength = order.length;
   const productLength = order.length;
   const revenueLength = order.length;
-  // for (let i = 0; i < 12 - orderLength; i++) {
-  //   order.push(0);
-  // }
-
-  // for (let i = 0; i < 12 - customerLength; i++) {
-  //   customer.push(0);
-  // }
-
-  // for (let i = 0; i < 12 - productLength; i++) {
-  //   product.push(0);
-  // }
-
-  // for (let i = 0; i < 12 - revenueLength; i++) {
-  //   revenue.push(0);
-  // }
-
+  
   const [active, setActive] = useState("1");
 
   const toggle = (tab) => {
@@ -126,83 +111,32 @@ const RevenueReport = (props) => {
         name: "Earning",
         data: order,
       },
-      // {
-      //   name: 'Expense',
-      //   data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
-      // }
     ],
     customerSeries = [
       {
         name: "Earning",
         data: customer,
       },
-      // {
-      //   name: 'Expense',
-      //   data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
-      // }
     ],
     productSeries = [
       {
         name: "Earning",
         data: product,
       },
-      // {
-      //   name: 'Expense',
-      //   data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
-      // }
     ],
     revenueSeries = [
       {
         name: "Earning",
         data: revenue,
       },
-      // {
-      //   name: 'Expense',
-      //   data: [-145, -80, -60, -180, -100, -60, -85, -75, -100]
-      // }
     ];
-
-  // const budgetSeries = [
-  //     {
-  //       data: [61, 48, 69, 52, 60, 40, 79, 60, 59, 43, 62],
-  //     },
-  //     {
-  //       data: [20, 10, 30, 15, 23, 0, 25, 15, 20, 5, 27],
-  //     },
-  //   ],
-  //   budgetOptions = {
-  //     chart: {
-  //       toolbar: { show: false },
-  //       zoom: { enabled: false },
-  //       type: "line",
-  //       sparkline: { enabled: true },
-  //     },
-  //     stroke: {
-  //       curve: "smooth",
-  //       dashArray: [0, 5],
-  //       width: [2],
-  //     },
-  //     colors: [props.primary, "#dcdae3"],
-  //     tooltip: {
-  //       enabled: false,
-  //     },
-  //   };
-
   return data !== null ? (
     <Card className="card-revenue-budget">
       <Row className="mx-0">
         <Col className="revenue-report-wrapper" md="8" xs="12">
           <div className="d-sm-flex justify-content-between align-items-center mb-3">
-            <CardTitle className="mb-50 mb-sm-0">Tổng quan</CardTitle>
+            <CardTitle className="mb-50 mb-sm-0">Tổng Quan</CardTitle>
             <div className="d-flex align-items-center">
-              {/* <div className='d-flex align-items-center mr-2'>
-                <span className='bullet bullet-primary mr-50 cursor-pointer'></span>
-                <span>Earning</span>
-              </div> */}
-              {/* <div className='d-flex align-items-center'>
-                <span className='bullet bullet-warning mr-50 cursor-pointer'></span>
-                <span>Expense</span>
-              </div> */}
             </div>
           </div>
           <Nav tabs>
